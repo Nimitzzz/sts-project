@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+        }
+        .nav{
+            width: 100%;
+            background-color: rgb(4, 90, 147);
+            display: flex;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            justify-content: center;
+            color: antiquewhite;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 100px;
+        }
+        .container{
+            border: 1px solid black;
+            width:85%;
+            height:500px;
+            display: flex;
+            flex-direction: row;
+            margin: 15px;
+            margin-left: 80px;
+        }
+        .box1{
+            border: 1px solid black;
+            width:30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin: 15px;
+            height: 50%;
+            padding-left: 30px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .box-set{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            height: 17%;
+            padding: 2px;
+        }
+        .box{
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 5px;
+            margin: 5px;
+            width: 20px;
+            border-radius: 2px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .box:hover{
+            background-color: rgba(48, 127, 201, 0.772);
+            cursor: pointer;
+        }
+        .box2{
+            border: 1px solid black;
+            width:70%;
+            display: block;
+            margin: 15px;
+        }
+        .navmini{
+            width: 100%;
+            background-color: rgb(4, 90, 147);
+            display: flex;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            justify-content: center;
+            color: antiquewhite;
+            height: 40px;
+            padding-top: 10px;
+        }
+        #ctd{
+            border: 1px solid white;
+            margin-left: 200px;
+            padding: 10px 10px 10px 10px;
+            display: flex;
+            align-content: flex-end;
+            text-align: center;
+            background-color: rgb(219, 209, 209);
+            color: rgb(48, 127, 201);
+            border-radius: 20px;
+            text-decoration: double;
+        }
+        #img{
+            margin-left: 4px;
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+        }
+        .question{
+            padding: 10px 10px 10px 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        input[type = radio]{
+            padding: 20px 20px 20px 20px;
+        }
+        input[type = submit]{
+            padding: 10px 20px 10px 20px;
+            width: 15vw;
+            border-radius: 10px;
+            background-color: rgb(4, 90, 147);
+            color: white;
+        }
+        .final{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+    <div>
+        VTOP EXAMINATIONS
+     </div>
+     <div id="ctd">
+        <p>TIME LEFT  :-     </p>   
+        <p id="countdown"></p>
+        <img id="img" src="depositphotos_34271411-stock-illustration-vector-profile-icon.jpeg" alt="">
+     </div>
+    </div>
+     <div class="container">
+         <div class="box1">
+            <div class="box-set">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">7</div>
+                <div class="box">8</div>
+                <div class="box">9</div>
+                <div class="box">10</div>
+                <div class="box">11</div>
+                <div class="box">12</div>
+                <div class="box">13</div>
+                <div class="box">14</div>
+                <div class="box">15</div>
+                <div class="box">16</div>
+                <div class="box">17</div>
+                <div class="box">18</div>
+                <div class="box">19</div>
+                <div class="box">20</div>
+                <div class="box">21</div>
+                <div class="box">22</div>
+                <div class="box">23</div>
+                <div class="box">24</div>
+                <div class="box">25</div>
+                <div class="box">26</div>
+                <div class="box">27</div>
+                <div class="box">28</div>
+                <div class="box">29</div>
+                <div class="box">30</div>
+                <div class="box">31</div>
+                <div class="box">32</div>
+                <div class="box">33</div>
+                <div class="box">34</div>
+                <div class="box">35</div>
+                <div class="box">36</div>
+                <div class="box">37</div>
+                <div class="box">38</div>
+                <div class="box">39</div>
+                <div class="box">40</div>
+            </div>
+         </div>
+         <div class="box2">
+            <div class="navmini">
+                    QUESTION
+            </div>
+            <br>
+            <div class="question">
+                <form id="form">
+               <P>Where is the Taj Mahal located?</P> 
+               <p>
+                Answer:</p>
+                <p>
+                <div>
+                <input type="radio" id="Radio1" name="drone" value="huey">
+                <label for="huey">Agra</label>
+                </div>
+                <div>
+                <input type="radio" id="Radio2" name="drone" value="dewey">
+                <label for="dewey">Raipur</label>
+                 </div>
+                 <div>
+                <input type="radio" id="Radio3" name="drone" value="louie">
+                <label for="louie">Kolkata</label>
+                 </div>
+                 <div>
+                <input type="radio" id="Radio4" name="drone" value="sewey">
+                <label for="sewey">Vellore</label>
+                </div>
+                 </p>
+            </div>
+            <div class="final">
+                <p>
+                    <input type="submit" onClick="nextBtn()" name="" id="nextbutton" value="Mark answer">
+                </p>
+                <p>
+                    <input type="submit" onClick="nextBtn()" name="" id="nextbutton" value="Next Question">
+                </p>
+                
+                <p>
+                    <input type="submit" onClick="nextBtn()" name="" id="nextbutton" value="Submit">
+                </p>
+            </div>
+         </div>
+     </div>
+    </form>
+     <script src="countdown.js"></script>
+
+</body>
+</html>

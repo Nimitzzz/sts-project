@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .scroll-body{
+        scroll-behavior: smooth;
+        scroll-padding-top: 30px;
+       }
+        .main{
+            padding-top: 90px;
+            height: 200px;
+            text-align: center;
+            background-color: rgb(211, 102, 120);
+            width: 100vm;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            transition: background-color 1s , color 1.2s, font-size 1.2s,text-align 1s;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        .nav{
+            padding-top: 20px;
+            padding-left: 70px;
+            background-color: rgba(0, 0, 0, 0.775);
+            height: 50px;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: aliceblue;
+            position: sticky;
+            top: 10px;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 20px;
+            transition: border-radius 1s;
+        }
+        .nav:hover{
+            border-radius: 40px;
+        }
+        .main:hover{
+            background-color:rgb(91, 91, 91);
+            color: aliceblue;
+            font-size: 40px ;
+            text-align: center;
+        }
+        a{
+            text-decoration-line: none;
+            transition: color 1s;
+        }
+        a:link{
+            text-decoration-line: none;
+            color: aliceblue;
+        }
+        a:visited{
+            text-decoration-line: none;
+            color: rgb(252, 255, 240);
+        }
+        a:hover{
+            text-decoration-line: none;
+            color: rgb(211, 102, 120);;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: 300px;
+            grid-auto-columns: 400px;
+            margin-top: 10px;
+            margin-left: 35px;
+        }
+        
+        .sub-container {
+            display: grid;
+            grid-gap: 10px;
+        }
+        
+        .box {
+            padding-top: 5px;
+            text-align: center;
+            color: white;
+            background-color: lightgreen;
+            border-radius: 10px;
+            width: 650px;
+        }
+        .para{
+            text-align: justify;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            scroll-behavior: smooth;
+        }
+        #b1{
+            background-image: url("call final1.webp");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x:center;
+            background-color: rgb(0, 0, 0);
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: opacity 1s, border-radius 1s;
+        }
+        #b1:hover{
+            opacity: 0.6;
+            border-radius: 80px;
+            cursor: pointer;
+        }
+        #b2{
+            background-image: url("ig2.jpeg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x:center;
+            background-color: rgb(0, 0, 0);
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: opacity 1s, border-radius 1s;
+        }
+        #b2:hover{
+            opacity: 0.6;
+            border-radius: 80px;
+            cursor: pointer;
+        }
+        #b3{
+            background-image: url("email.jpeg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x:center;
+            background-color: rgb(0, 0, 0);
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 40px;
+            transition: opacity 1s, border-radius 1s;
+        }
+        #b3:hover{
+            opacity: 0.6;
+            border-radius: 80px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>OUR PRODUCTS</h1>
+    </div>
+    <div class="nav">
+        <a href="#hoses">SOAPS          </a>
+        <a href="#rakes">PERFUMES                                        </a>
+        <a href="#shovels">TOWELS               </a>
+        <a href="#contacts">CONTACT US</a>
+    </div>
+    <div class="para">
+    <p class="h" id="hoses">
+        <h1>SOAPS</h1>
+        we are dedicated to providing our customers with high-quality, all-natural soaps that promote healthy skin. We use only the finest ingredients, including essential oils, herbs, and botanical extracts, to create nourishing and moisturizing bars that leave the skin feeling refreshed and revitalized. Our soaps are made through a traditional, small-batch process to ensure the highest level of quality control. From invigorating scents to gentle formulas, we have a wide variety of options to suit everyone's unique needs. We are committed to using sustainable and eco-friendly practices in all aspects of our business, from sourcing ingredients to packaging. Join us in our mission to promote healthy skin and a healthier planet!
+    </p>
+    <p class="r" id="rakes">
+        <h1>PERFUMES</h1>
+        As a perfume company, we are dedicated to providing a luxurious and diverse range of fragrances for every taste and occasion. From classic, timeless scents to bold, contemporary aromas, we offer only the finest perfumes from well-known and niche brands. Our expert team carefully selects each fragrance to ensure quality and uniqueness, and we are always on the lookout for the latest trends and innovative scents. We are committed to providing excellent customer service and are passionate about helping our customers find their perfect signature scent. Our perfumes are crafted with the highest-quality ingredients and are sold at accessible prices, making luxury fragrance a part of everyone's daily routine. Join us in discovering the magic of fragrance!
+        </p>
+    <p class="s" id="shovels">
+        <h1>TOWELS</h1>
+        we are dedicated to providing our customers with the highest-quality towels for every occasion. From luxurious bath towels to quick-drying gym towels, we have a wide variety of options to suit everyone's needs. Our towels are made from the finest materials, including 100% cotton and Turkish cotton, to ensure maximum softness and absorbency. We are committed to using sustainable and eco-friendly practices in all aspects of our business, from sourcing materials to manufacturing processes. Our towels come in a range of colors and sizes, and we offer customization options for those looking for a truly unique product. Join us in our mission to make every moment feel like a spa day with our premium towels!
+    </p>
+    <br>
+    <hr style="border-top: dotted 3px;" />
+    </div>
+    <div class="container" id="contacts">
+        <div class="sub-container">
+            <div class="box" id="b1">CONTACT US:</div>
+        </div>
+        <div class="sub-container">
+            <div class="box" id="b2"></div>
+            <div class="box" id="b3"></div>
+        </div>
+    </div>
+        <br>
+</body>
+</html>

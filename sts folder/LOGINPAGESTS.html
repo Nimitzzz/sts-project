@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+        }
+        .header{
+            background-color: rgb(4, 90, 147);
+            width: 100%;
+            height: 90px;
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 20px;
+            color: white;
+            font-size: larger;
+        }
+        .header img{
+            float: left;
+            height: fit-content;
+            width: 250px;
+        }
+        .center{
+            align-items: center;
+            height: 500px;
+        }
+        .box{
+            width: 80%;
+            border: 1px solid black;
+            height: 350px;
+            margin-left: 12%;
+            text-align: center;
+            padding-top: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #username , #password{
+            margin-top: 10px;
+            width: 80%;
+            height: 30px;
+            transition: width 1s,height 0.5s,border-radius 0s;
+        }
+        #btn{
+            margin-top: 10px;
+            width: 80%;
+            height: 30px;
+            transition: width 1s,height 0.5s,border-radius 0s;
+        }
+        #username:hover , #password:hover{
+        background-color: blanchedalmond;
+        width:95%;
+        border-radius: 20px;
+        height: 50px;
+        }
+        #btn:hover{
+            background-color: rgba(26, 117, 26, 0.343);
+            width:95%;
+            border-radius: 20px;
+            height: 50px;
+        }
+        .msg2{
+            margin-top: 5px;
+            margin-left: 12%;
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background: rgba(26, 117, 26, 0.343);
+            border-radius: 5px;
+            width: 80% ;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="vit-logo (1).png" alt="">
+        VTOP AUTHENTICATION
+    </div>
+    <br>
+    <div class="center">
+        <form id="form">
+        <br><br><br>
+        <div class ="msg"></div>
+        <div class="box">
+        <p>
+            Username:<br>
+            <input type="text" required name="username" id="username" placeholder="Enter username">
+        </p><br>
+        <p>
+            Password:<br>
+            <input type="text" required name="PASSWORD" id="password" placeholder="Enter password">
+        </p>
+        <p>
+            <br>
+           <input type="submit" onClick="myFunction()" name="" id="btn" value="Submit">
+        </p>
+        </div>
+        <div class ="msg2"></div>
+        </form>
+    </div>
+<script src="stsproject.js"></script> 
+</body>
+</html>
